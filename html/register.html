@@ -1,0 +1,66 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>亦书亦音/注册</title>  
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>  
+<body>  
+    <div class="wrapper">  
+        <div class="container">  
+            <h1>Welcome</h1>  
+              
+            <form name='form' class="form" action='../php/register.php' method='post' onSubmit="return check();">  
+                <input type="text" placeholder="Username（2~8 bits）" name='username'>  
+                <input type="password" placeholder="Password（6~20 bits）" name="password">  
+                <input type="password" placeholder="Confirm Password" name="confirm">  
+                <button type="submit" id="register-button" value='submit' name='submit' >Register</button>  
+            </form>  
+        </div>  
+          
+        <ul class="bg-bubbles">  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+        </ul>  
+    </div>  
+</body>  
+   <script type="text/javascript">  
+          
+         $("#login-button").click(function(event){  
+                 event.preventDefault();  
+               
+             $('form').fadeOut(500);  
+             $('.wrapper').addClass('form-success');  
+        });  
+        //验证信息填写是否有误  
+        function check()  
+        {  
+           if(form.username.value.length<2 || form.username.value.length>8)  
+           {  
+           alert('用户名不合法！请输入2-8位用户名');  
+           form.username.focus();  
+           return false;  
+           }  
+           if(form.pass.value.length<6 ||form.pass.value.length>20)  
+           {  
+           alert('密码不合法！请输入6-20位密码');  
+           form.username.focus();  
+           return false;  
+           }  
+           if(form.pass.value != form.pass2.value)//判断两次输入的密码是否一致  
+           {  
+            alert("两次输入的密码不一致！");  
+            form.pass.focus();  
+            return false;  
+           }  
+        }  
+    </script>  
+</html>  

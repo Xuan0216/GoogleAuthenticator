@@ -1,0 +1,146 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.header-top .actions > li:first-child {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+/* col-xs */
+@media only screen and (max-width: 767px) {
+	/*
+	| ---------------------------------------------------------
+	| General & Helper Class
+	| ---------------------------------------------------------
+	*/
+	.center-xs {
+		display: table;
+		width: auto;
+		margin: 0 auto;
+		float: none;
+		position: static;
+		text-align: center;
+	}
+	
+	/*
+	| ---------------------------------------------------------
+	| Header
+	| ---------------------------------------------------------
+	*/
+	.header-top {
+		height: auto;
+	}
+	.header-top .contact-info,
+	.header-top .actions {
+		display: table;
+		margin: 0 auto;
+		padding: 15px 0;
+		float: none;
+		text-align: center;
+	}
+	
+	.main-header {
+		height: auto;
+		margin: 0;
+		padding: 30px 0;
+	}
+	.main-header .actions {
+		display: table;
+		margin: 0 auto 30px auto;
+		float: none;
+		position: static;
+	}
+	.main-header .logo-wrapper {
+		position: static;
+		float: none;
+	}
+	
+	.dl-menuwrapper {
+		margin: 0 0 3em;
+	}
+	.dl-menuwrapper .dl-menu.dl-menuopen,
+	.dl-menuwrapper > .dl-submenu {
+		top: 5em;
+	}
+	
+	
+	.products-wrapper {
+		top: 0;
+	}
+	.products-layout.list .entry-media, 
+	.products-layout.list .entry-main {
+		display: block;
+		width: auto;
+	}
+	.products-layout.list .entry-media {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	.products-layout.list .entry-main > * {
+		margin-right: auto;
+	}
+	.products-layout.list .entry-price {
+		position: static;
+		margin: 20px auto;
+		padding: 0;
+		border: 0;
+	}
+	.products-layout.list .entry-links {
+		display: table;
+		margin: 10px auto;
+		float: none;
+	}
+	
+	.nav-tabs>li {
+		float: none;
+		margin-bottom: 3px;
+	}
+	
+	.tbl-cart td {
+		font-size: 12px;
+	}
+	.tbl-cart .qty-btn-group {
+		min-width: 28px;
+		width: 32px;
+	}
+	.tbl-cart .qty-btn-group button {
+		height: 20px;
+	}
+	.tbl-cart tbody tr > td:nth-child(3):after {
+		content: none;
+	}
+}
+/* col-sm */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* col-md */
+@media only screen and (min-width: 992px) and (max-width: 1170px) {
+	.main-menu > li > a {
+		padding: 25px 10px;
+	}
+}
+/* col-xs , col-sm */
+@media only screen and (max-width: 991px) {
+	/*
+	| ---------------------------------------------------------
+	| Promo
+	| ---------------------------------------------------------
+	*/
+	.promo.first-child {
+		margin-top: 0;
+	}
+}
+
+/* col-md and col-lg */
+@media only screen and (min-width: 992px) {
+	/*
+	| ---------------------------------------------------------
+	| Promo
+	| ---------------------------------------------------------
+	*/
+	.promo.first-row {
+		margin-top: 0;
+	}
+}
+/* All but col-xs */
+@media only screen and (min-width: 768px) {
+	#frm-contact-us { margin-right: 80px; }
+}

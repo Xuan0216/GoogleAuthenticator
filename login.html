@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>亦书亦音/登录</title>  
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head> 
+<body>  
+    <div class="wrapper">  
+        <div class="container">  
+            <h1>Welcome</h1>  
+              
+            <form name='form' class="form" method='post' action='php/login.php' onSubmit="return check()">  
+                <input type="text" placeholder="Username"  id="userid" name="userid" >  
+                <input type="password" placeholder="Password" name="password" id = "password">  
+                <input type="text" placeholder="Identify Code" name="key" id = "key">
+                <button type="submit" id="login-button" name='submit' value='submit'>Login</button>  
+                <button type="submit" id="register-button"><a href="html/register.html" class="cc">Register</a></button>  
+            </form>  
+        </div>  
+          
+        <ul class="bg-bubbles">  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+        </ul>  
+    </div>  
+</body>  
+    <script src = "https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript">  
+        
+         $("#login-button").click(function(event){  
+                 event.preventDefault();  
+               
+             $('form').fadeOut(500);  
+             $('.wrapper').addClass('form-success');  
+        });  
+        function check(){  
+        
+          if(form.userid.value == "")//如果用户名为空  
+          {  
+            alert("您还没有填写用户名！");  
+            form.userid.focus();  
+            return false;  
+          }  
+          if(form.password.value == "")//如果密码为空  
+          {  
+            alert("您还没有填写密码！");  
+            myform.password.focus();  
+            return false;  
+          }  
+        }         
+    </script>  
+</html>  
